@@ -1,0 +1,59 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %} Blog {% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" href="{% static "portfolio/blog-styles.css" %}">
+
+
+
+{% endblock %}
+
+{% block content_header %} "My Answers" Blog {% endblock %}   
+
+{% block real_content %} 
+<div class="blog-container">
+	<!-- Section for blog posts -->
+	<section class="blog-posts-section">
+		<!-- Blog post 1 -->
+		<article class="blog-post">
+			<h2 class="post-title">The nth element in a Fibonachi Series Recursively -<br>  My Solution</h2>
+			<p class="post-content"> 
+				<img class='solutions-screenshots' alt="pythonfib" src="{% static "portfolio/riddles/pythonfibonaci.png"  %}"> </p>
+			<p class="post-date">Published on: October 18, 2024</p>
+		</article>
+
+		<!-- Blog post 2 -->
+		<article class="blog-post">
+			<h2 class="post-title">Cooking Competition - Solution</h2>
+			<p class="post-content">
+				<img class='solutions-screenshots' alt="pythonfib" src="{% static "portfolio/riddles/cooking_competition.png"  %}">
+			</p>
+			<p class="post-date">Published on: October 17, 2024</p>
+		</article>
+
+		<!-- Blog post 3 -->
+		<article class="blog-post">
+			<h2 class="post-title">Call Center - Solution</h2>
+			<p class="post-content">
+				<img class='solutions-screenshots' alt="pythonfib" src="{% static "portfolio/riddles/call_center.png"  %}">
+			</p>
+			<p class="post-date">Published on: October 17, 2024</p>
+		</article>
+
+		<!-- Blog post 4 -->
+		<article class="blog-post">
+			<h2 class="post-title">Ranking Products from Sales Table - Solution</h2>
+			<p class="post-content">
+				<img class='solutions-screenshots' alt="pythonfib" src="{% static "portfolio/riddles/product_sales.png"  %}">
+			</p>
+			<p class="post-date">Published on: October 17, 2024</p>
+		</article>
+	
+		<!-- Additional posts can be added here -->
+	</section>
+
+</div>
+
+{% endblock %}

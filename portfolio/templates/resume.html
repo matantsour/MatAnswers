@@ -1,0 +1,38 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %} Resume {% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" href="{% static "portfolio/resumePageStyle.css" %}">
+
+<style type="text/css">
+	.auto-style1 {
+		text-align: right;
+	}
+	</style>
+{% endblock %}
+
+{% block content_header %} Get My Resume {% endblock %}   
+
+{% block real_content %} 
+
+<div class="form-container">
+    <h2 class="form-title">Contact Matan</h2>
+    <form action="{% url "resume-page" %}" method="POST" class="form-style">
+        {% csrf_token %}
+        <!-- Email input field -->
+        <label for="email" class="label-style">Email Address:</label>
+        <input type="email" id="email" name="email" class="input-field" required placeholder="Enter your email address">
+
+        <!-- Text area with default message -->
+        <label for="message" class="label-style">Message:</label>
+        <textarea id="message" name="message" class="textarea-field message-textarea">
+Hi Matan, I am interested in learning more about you, please send me your resume and we'll be in touch!
+        </textarea>
+
+        <!-- Submit button -->
+        <input type="submit" value="Send Message" class="submit-button">
+    </form>
+</div>
+{% endblock %}

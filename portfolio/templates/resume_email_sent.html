@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %} SentResume {% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" href="{% static "portfolio/resumePageStyle.css" %}">
+
+<style type="text/css">
+	.auto-style1 {
+		text-align: right;
+	}
+	</style>
+{% endblock %}
+
+{% block content_header %} Thank you {% endblock %}   
+
+{% block real_content %} 
+Thank you! The email has been sent to your inbox.
+{% endblock %}

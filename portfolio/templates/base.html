@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>    {% block page_title %} {% endblock %}    </title>
+    <link rel="stylesheet" href="{% static "portfolio/headerStyles.css" %}">
+    <link rel="stylesheet" href="{% static "portfolio/contextStyles.css" %}">
+    {% block stylesheets %} {% endblock %}
+	</head>
+<body>
+    <header>
+    <!-- HEADERS start -->
+    <table class="outer-headers-table">
+            <tr>
+                <td class="logo-column">
+                    <img class='logo' src="{% static "portfolio/logo.png" %}" alt="Logo">
+                </td>
+                <td class="headers-column">
+                    <table class="inner-header-table">
+                        <tr>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="{% url "about-me-page" %}" >About Me</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="{% url "resume-page" %}">Resume</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="{% url "blog-page" %}">Blog - My Answers</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="{% url "projects-page" %}">My Projects</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="{% url "riddles-page" %}">My Riddles</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="{% url "games-page" %}">My Games</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="{% url "recepies-page" %}">My Recipies</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+       <!-- HEADERS end-->
+        
+       <!-- CONTENT start -->
+       
+	       <!-- CONTENT header -->
+       <table class="context-table">
+       <tr>
+      	 <td class="reg-cell">
+        	 <div class="section-image-container">
+        	 <img class="section-image-object" src="{% static "portfolio/sectionHeader.jpg" %}" alt="section_header_pic">
+        	    <div class="overlay-text">  {% block content_header %} {% endblock %}                </div>
+        	 </div>
+         </td>
+       </tr>
+       	    <!-- CONTENT header -->
+       </table>
+       <table class="outer-headers-table">
+        <tr>
+         <td class="column20p">
+         </td>
+      	 <td class="column60p">
+            {% block real_content %} {% endblock %}
+         </td>
+          <td class="column20p">
+         </td>
+
+       </tr>
+       </table>
+
+       
+       <!-- CONTENT end -->
+       
+    </header>
+    
+</body>
+</html>

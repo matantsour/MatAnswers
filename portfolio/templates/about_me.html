@@ -1,0 +1,48 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %} About {% endblock %}
+
+{% block stylesheets %} {% endblock %}
+
+{% block content_header %} About Me {% endblock %}   
+
+{% block real_content %} 
+
+Hello,<br>
+I'm Matan, a dedicated data professional and enthusiast.<br> 
+My goal is to help you tackle business challenges by providing tailored, software-driven solutions.<br>
+Feel free to reach out if you need assistance with any of the following:
+<li>Data extraction from various sources</li>
+<li>On-premises or cloud-based data storage</li>      	
+<li>Data modeling for analytics or transactions</li>
+<li>Data analysis, measurement, and presentation</li>
+<li>Automation of data workflows</li>      	       	 
+<li>Business intelligence processes</li>
+<li>Business and operational insights and custom reporting</li>
+<br>
+To learn more about my skills and experience, you can get my <strong>resume
+</strong> 
+<a href="{% url "resume-page" %}"> here </a> 
+<br>
+To check out some of my portfolio <strong>projects</strong>, please proceed
+<a href="{% url "projects-page" %}"> here </a> 
+<br>
+If in the mood to challenge yourself with some of my <strong>riddles</strong>, you may click 
+<a href="{% url "riddles-page" %}"> here </a> 
+<br>
+I have always liked playing <strong>games</strong>, check out the ones I've developed
+ <a href="{% url "games-page" %}"> here </a> 
+<br>
+If you're up to something sweet, my <strong>pastry chef</strong> abilities are available to you through my <strong>recipies</strong>
+ <a href="{% url "recepies-page" %}"> here </a> 
+
+{% endblock %}
+
+<td class="menu-cell"><a class ="no-effects-linkref" href="{% url "about-me-page" %}" >About Me</a></td>
+<td class="menu-cell"><a class ="no-effects-linkref" href="{% url "resume-page" %}">Resume</a></td>
+<td class="menu-cell"><a class ="no-effects-linkref" href="{% url "blog-page" %}">Blog - My Answers</a></td>
+<td class="menu-cell"><a class ="no-effects-linkref" href="{% url "projects-page" %}">My Projects</a></td>
+<td class="menu-cell"><a class ="no-effects-linkref" href="{% url "riddles-page" %}">My Riddles</a></td>
+<td class="menu-cell"><a class ="no-effects-linkref" href="{% url "games-page" %}">My Games</a></td>
+<td class="menu-cell"><a class ="no-effects-linkref" href="{% url "recepies-page" %}">My Recipies</a></td>

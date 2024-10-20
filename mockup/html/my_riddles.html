@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddles</title>
+    <link rel="stylesheet" href="headerStyles.css">
+    <link rel="stylesheet" href="contextStyles.css">
+    <link rel="stylesheet" href="riddles-styles.css">
+	<style type="text/css">
+	.auto-style1 {
+		text-align: right;
+	}
+	</style>
+</head>
+<body>
+    <header>
+    <!-- HEADERS start -->
+    <table class="outer-headers-table">
+            <tr>
+                <td class="logo-column">
+                    <img src="logo.png" alt="Logo">
+                </td>
+                <td class="headers-column">
+                    <table class="inner-header-table">
+                        <tr>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="about_me.html" >About Me</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="resume.html">Resume</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="blog.html">Blog - My Answers</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_projects.html">My Projects</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_riddles.html">My Riddles</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_games.html">My Games</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_recipies.html">My Recipies</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+       <!-- HEADERS end-->
+        
+       <!-- CONTENT start -->
+       
+	       <!-- CONTENT header -->
+       <table class="context-table">
+       <tr>
+      	 <td class="reg-cell">
+        	 <div class="section-image-container">
+        	 <img class="section-image-object" src="sectionHeader.jpg" alt="section_header_pic">
+        	    <div class="overlay-text"> My Riddles</div>
+        	 </div>
+         </td>
+       </tr>
+       	    <!-- CONTENT header -->
+       </table>
+       <table class="outer-headers-table">
+        <tr>
+         <td class="column20p">
+         </td>
+      	 <td class="column60p">
+      	  <!-- Real CONTENT here -->
+		
+    <div class="riddles-container">
+
+        <!-- riddles grid -->
+        <section class="riddles-grid">
+            <!-- riddle card 1 -->
+            <div class="riddle-card card-bg-1">
+                <h2 class="riddle-name">Riddle 1</h2>
+                <div class="riddle-topics">
+                    <span class="hashtag">#topic1</span>
+                    <span class="hashtag">#topic2</span>
+                    <span class="hashtag">#topic3</span>                                        
+                </div>
+                <p class="riddle-description">Text to describe the riddle</p>
+				<a href="link_to_solution" class="project-link">See Solution</a>
+                
+            </div>
+
+            <!-- riddle card 2 -->
+            <div class="riddle-card card-bg-2">
+                <h2 class="riddle-name">Riddle 2</h2>
+                <div class="riddle-topics">
+                    <span class="hashtag">#topic1</span>
+                    <span class="hashtag">#topic2</span>
+                    <span class="hashtag">#topic3</span>                                        
+                </div>
+                <p class="riddle-description">Text to describe the riddle</p>
+				<a href="link_to_solution" class="project-link">See Solution</a>
+                
+            </div>
+			 <!-- riddle card 3 -->
+            <div class="riddle-card card-bg-2">
+                <h2 class="riddle-name">Riddle 3</h2>
+                <div class="riddle-topics">
+                    <span class="hashtag">#topic1</span>
+                    <span class="hashtag">#topic2</span>
+                    <span class="hashtag">#topic3</span>                                        
+                </div>
+                <p class="riddle-description">Text to describe the riddle</p>
+				<a href="link_to_solution" class="project-link">See Solution</a>
+                
+            </div>
+			
+            <!-- riddle card 4 -->
+            <div class="riddle-card card-bg-1">
+                <h2 class="riddle-name">Riddle 4</h2>
+                <div class="riddle-topics">
+                    <span class="hashtag">#topic1</span>
+                    <span class="hashtag">#topic2</span>
+                    <span class="hashtag">#topic3</span>                                        
+                </div>
+                <p class="riddle-description">Text to describe the riddle</p>
+				<a href="link_to_solution" class="project-link">See Solution</a>
+                
+            </div>
+			 <!-- riddle card 5 -->
+            <div class="riddle-card card-bg-1">
+                <h2 class="riddle-name">Riddle 5</h2>
+                <div class="riddle-topics">
+                    <span class="hashtag">#topic1</span>
+                    <span class="hashtag">#topic2</span>
+                    <span class="hashtag">#topic3</span>                                        
+                </div>
+                <p class="riddle-description">Text to describe the riddle</p>
+				<a href="link_to_solution" class="project-link">See Solution</a>
+                
+            </div>
+			
+            <!-- riddle card 6 -->
+            <div class="riddle-card card-bg-2">
+                <h2 class="riddle-name">Riddle 6</h2>
+                <div class="riddle-topics">
+                    <span class="hashtag">#topic1</span>
+                    <span class="hashtag">#topic2</span>
+                    <span class="hashtag">#topic3</span>                                        
+                </div>
+                <p class="riddle-description">Text to describe the riddle</p>
+				<a href="link_to_solution" class="project-link">See Solution</a>
+                
+            </div>
+
+            <!-- Additional riddle cards can be added here -->
+        </section>
+
+        <!-- Form to add a new riddle -->
+        <section class="new-riddle-section">
+            <h2 class="form-title">Add a New Riddle </h2>
+            <form action="your-server-endpoint" method="POST" class="form-style">
+                <!-- riddle Name -->
+                <label for="riddle-name" class="label-style">Riddle Name:</label>
+                <input type="text" id="riddle-name" name="riddle-name" class="input-field" required placeholder="Enter riddle name">
+
+                <!-- riddle Topics (hashtags) -->
+                <label for="riddle-topics" class="label-style">Riddle Topics (Hashtags):</label>
+                <input type="text" id="riddle-topics" name="riddle-topics" class="input-field" required placeholder="Enter topics, separated by commas">
+
+                <!-- riddle Description -->
+                <label for="riddle-description" class="label-style">Riddle Description:</label>
+                <textarea id="riddle-description" name="riddle-description" class="textarea-field" required placeholder="Enter riddle description"></textarea>
+
+                <!-- Riddle Solution Link -->
+                <label for="riddle-link" class="label-style">Riddle Link:</label>
+                <input type="url" id="riddle-link" name="riddle-link" class="input-field" required placeholder="Enter riddle link URL">
+
+                <!-- Submit button -->
+                <input type="submit" value="Add riddle" class="submit-button">
+            </form>
+        </section>
+    </div>
+
+      	 <!-- Real CONTENT ends here -->
+         </td>
+          <td class="column20p">
+         </td>
+
+       </tr>
+       </table>
+
+       
+       <!-- CONTENT end -->
+       
+    </header>
+    
+</body>
+</html>

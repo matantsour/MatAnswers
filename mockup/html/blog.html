@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="headerStyles.css">
+    <link rel="stylesheet" href="contextStyles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+	<style type="text/css">
+	.auto-style1 {
+		text-align: right;
+	}
+	</style>
+</head>
+<body>
+    <header>
+    <!-- HEADERS start -->
+    <table class="outer-headers-table">
+            <tr>
+                <td class="logo-column">
+                    <img src="logo.png" alt="Logo">
+                </td>
+                <td class="headers-column">
+                    <table class="inner-header-table">
+                        <tr>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="about_me.html" >About Me</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="resume.html">Resume</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="blog.html">Blog - My Answers</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_projects.html">My Projects</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_riddles.html">My Riddles</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_games.html">My Games</a></td>
+                            <td class="menu-cell"><a class ="no-effects-linkref" href="my_recipies.html">My Recipies</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+       <!-- HEADERS end-->
+        
+       <!-- CONTENT start -->
+       
+	       <!-- CONTENT header -->
+       <table class="context-table">
+       <tr>
+      	 <td class="reg-cell">
+        	 <div class="section-image-container">
+        	 <img class="section-image-object" src="sectionHeader.jpg" alt="section_header_pic">
+        	    <div class="overlay-text"> "My Answers" Blog</div>
+        	 </div>
+         </td>
+       </tr>
+       	    <!-- CONTENT header -->
+       </table>
+       <table class="outer-headers-table">
+        <tr>
+         <td class="column20p">
+         </td>
+      	 <td class="column60p">
+      	  <!-- Real CONTENT here -->
+			    <div class="blog-container">
+			        <!-- Section for blog posts -->
+			        <section class="blog-posts-section">
+			            <!-- Blog post 1 -->
+			            <article class="blog-post">
+			                <h2 class="post-title">Post Title 1</h2>
+			                <p class="post-content">This is the content of the first post. You can write about any topic here.</p>
+			                <p class="post-date">Published on: October 18, 2024</p>
+			            </article>
+			
+			            <!-- Blog post 2 -->
+			            <article class="blog-post">
+			                <h2 class="post-title">Post Title 2</h2>
+			                <p class="post-content">This is the content of the second post. Keep your blog interesting and diverse!</p>
+			                <p class="post-date">Published on: October 17, 2024</p>
+			            </article>
+			
+			            <!-- Additional posts can be added here -->
+			        </section>
+			
+			        <!-- Form to add a new post -->
+			        <section class="new-post-section">
+			            <h2 class="form-title">Add a New Post</h2>
+			            <form action="your-server-endpoint" method="POST" class="form-style">
+			                <!-- Post Title -->
+			                <label for="post-title" class="label-style">Post Title:</label>
+			                <input type="text" id="post-title" name="post-title" class="input-field" required placeholder="Enter post title">
+			
+			                <!-- Post Content -->
+			                <label for="post-content" class="label-style">Post Content:</label>
+			                <textarea id="post-content" name="post-content" class="textarea-field" required placeholder="Write your blog post content here"></textarea>
+			
+			                <!-- Submit button -->
+			                <input type="submit" value="Publish Post" class="submit-button">
+			            </form>
+			        </section>
+			    </div>
+      	 <!-- Real CONTENT ends here -->
+         </td>
+          <td class="column20p">
+         </td>
+
+       </tr>
+       </table>
+
+       
+       <!-- CONTENT end -->
+       
+    </header>
+    
+</body>
+</html>

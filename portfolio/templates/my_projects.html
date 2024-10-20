@@ -1,0 +1,100 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %} Projects {% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static "portfolio/projects-styles.css" %}">
+<style type="text/css">
+.auto-style1 {
+    text-align: right;
+}
+</style>
+
+{% endblock %}
+
+{% block content_header %} My Projects {% endblock %}   
+
+{% block real_content %} 
+<div class="projects-container">
+
+    <!-- Projects grid -->
+    <section class="projects-grid">
+        <!-- Project card 1 -->
+        <div class="project-card card-bg-1">
+            <h2 class="project-name">DE Data Modeling</h2>
+            <div class="project-topics">
+                <span class="hashtag">#DataModeling</span>
+                <span class="hashtag">#NoSQL</span>
+                <span class="hashtag">#Cassandra</span>                                        
+            </div>
+            <p class="project-description">In this project, I designed a 𝗡𝗼𝗦𝗤𝗟 database using 𝗔𝗽𝗮𝗰𝗵𝗲 𝗖𝗮𝘀𝘀𝗮𝗻𝗱𝗿𝗮 and developed an 𝗘𝗧𝗟 pipeline to extract data from multiple 𝗖𝗦𝗩 files, transform it into a unified format, and load it into Cassandra tables</p>
+            <a href="https://github.com/matantsour/Data-Engineering-Projects/tree/main/DE%20Data%20Modeling" class="project-link">See project</a>
+        </div>
+
+        <!-- Project card 2 -->
+        <div class="project-card card-bg-2">
+            <h2 class="project-name">ETL for DB hosted in Redshift</h2>
+            <div class="project-topics">
+                <span class="hashtag">#AWS</span>
+                <span class="hashtag">#ETL</span>
+                <span class="hashtag">#RedShift</span>                   
+            </div>
+            <p class="project-description">In this project, I have loaded data from 𝗔𝗪𝗦 𝗦𝟯 to staging tables on 𝗥𝗲𝗱𝘀𝗵𝗶𝗳𝘁, I extracted, transformed and loaded this data through SQL statements in order to create analytics tables (dimenstions tables and facts tables).</p>
+            <a href="https://github.com/matantsour/Data-Engineering-Projects/tree/main/DE%20AWS%20Redshift%20ETL" class="project-link">See project</a>
+        </div>
+         <!-- Project card 3 -->
+        <div class="project-card card-bg-2">
+            <h2 class="project-name">Building a Data Lakehouse using AWS services</h2>
+            <div class="project-topics">
+                <span class="hashtag">#Glue</span>
+                <span class="hashtag">#Athena</span>
+                <span class="hashtag">#S3</span>
+                <span class="hashtag">#Lakehouse</span>
+            </div>
+            <p class="project-description">The project demonstrates how to 𝗯𝘂𝗶𝗹𝗱 𝗮 𝗱𝗮𝘁𝗮 𝗹𝗮𝗸𝗲𝗵𝗼𝘂𝘀𝗲 using 𝗔𝗪𝗦 services, with the goal of curating data for machine learning model training.
+                                        The process uses AWS services such as:
+                                        𝗦𝟯: For data storage.
+                                        𝗔𝗪𝗦 𝗚𝗹𝘂𝗲: For running ETL jobs.
+                                        𝗔𝘁𝗵𝗲𝗻𝗮: For querying data.
+            </p>
+            <a href="https://github.com/matantsour/Data-Engineering-Projects/tree/main/DE%20AWS%20Data%20Lakehouse%20Solution" class="project-link">See project</a>
+        </div>
+        
+        <!-- Project card 4 -->
+        <div class="project-card card-bg-1">
+            <h2 class="project-name">Data Pipelines</h2>
+            <div class="project-topics">
+                <span class="hashtag">#AirFlow</span>
+                <span class="hashtag">#AWS</span>
+            </div>
+            <p class="project-description">ONGOING</p>
+            <a href="project-2-details.html" class="project-link">See project</a>
+        </div>
+         <!-- Project card 5 -->
+        <div class="project-card card-bg-1">
+            <h2 class="project-name">What Do You Remember From Your High School Matriculation Exam ?</h2>
+            <div class="project-topics">
+                <span class="hashtag">#Python</span>
+                <span class="hashtag">#StatisticalInference</span>
+            </div>
+            <p class="project-description">I used data exploration and statistical inference to find out which one of two age-groups remembers their matriculation exam better -<br> A) Adults 23-28 YO <br> B) Young Adults 18-20</p>
+            <a href="https://github.com/matantsour/Core_Studies_Memory_Analysis" class="project-link">See project</a>
+        </div>
+        
+        <!-- Project card 6 -->
+        <div class="project-card card-bg-2">
+            <h2 class="project-name">Netflix Analysis 2020</h2>
+            <div class="project-topics">
+                <span class="hashtag">#PandasNumpy</span>
+                <span class="hashtag">#matplotlibSeaborn</span>
+                <span class="hashtag">#StatisticalInference</span>
+            </div>
+            <p class="project-description">Netflix data exploration and analysis, first python project ever made, back in 2020.</p>
+            <a href="https://github.com/matantsour/ABC_Project_Analytics/blob/master/ABC_Project_20.5.20.ipynb" class="project-link">See project</a>
+        </div>
+
+        <!-- Additional project cards can be added here -->
+    </section>
+</div>
+{% endblock %}

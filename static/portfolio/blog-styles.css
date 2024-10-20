@@ -1,0 +1,122 @@
+﻿/* Body style for the blog page */
+.blog-body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Blog container */
+.blog-container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Blog header */
+.blog-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.blog-title {
+    color: #333;
+    font-size: 36px;
+}
+
+/* Blog posts section */
+.blog-posts-section {
+    margin-top: 20px;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.post-title {
+    color: #444;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.post-date {
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* New post section */
+.new-post-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-style {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-style {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.textarea-field {
+    height: 150px;
+    resize: none;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.solutions-screenshots{
+    width: 100%;   /* Set the width of the image */
+    height: auto;  /* Set the height of the image */
+}

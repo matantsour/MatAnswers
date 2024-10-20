@@ -1,0 +1,93 @@
+﻿/* Font Config */
+@font-face {
+    font-family: "AssistantFont";
+    src: url("fonts/assistant.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* General reset to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+/* Outer table containing logo and header table */
+.outer-headers-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Logo column is 20%, headers column is 80% */
+.logo-column {
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.headers-column {
+    width: 80%;
+    padding: 0;
+}
+
+/* Inner table for the headers (nested table) */
+.inner-header-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures equal width for each header */
+}
+
+.menu-cell {
+    text-align: center;
+    font-family: "AssistantFont";
+    color:#333333;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 4px solid #797979; /* Bottom border for header cells */
+}
+
+/* Adjust logo size */
+.logo {
+    max-height: 50px; /* Adjust height as needed */
+    max-width: 100%; /* Ensure the logo scales responsively */
+}
+
+.no-effects-linkref {
+    text-decoration: none; /* Removes underline */
+    color: inherit;        /* Keeps the color the same as surrounding text */
+    cursor: default;       /* Makes the link behave like regular text */
+}
+.no-effects-linkref:hover {
+    text-decoration:underline; /* Removes underline */
+    color: red;        /* Keeps the color the same as surrounding text */
+    cursor:pointer;       /* Makes the link behave like regular text */
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .logo-column {
+        width: 30%; /* Adjust for smaller screens */
+    }
+    .headers-column {
+        width: 70%;
+    }
+
+    .inner-header-table td {
+        font-size: 14px; /* Adjust text size for smaller screens */
+        padding: 8px;
+    }
+}

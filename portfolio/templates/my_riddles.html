@@ -1,0 +1,89 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %} Riddles {% endblock %}
+
+{% block stylesheets %} 
+<link rel="stylesheet" href="{% static "portfolio/riddles-styles.css" %}">
+
+<style type="text/css">
+	.auto-style1 {
+		text-align: right;
+	}
+	</style>
+{% endblock %}
+
+{% block content_header %} My Riddles {% endblock %}   
+
+{% block real_content %} 
+		
+<div class="riddles-container">
+
+    <!-- riddles grid -->
+    <section class="riddles-grid">
+        <!-- riddle card 1 -->
+        <div class="riddle-card card-bg-1">
+            <h2 class="riddle-name">The nth element in a Fibonachi Series Recursively</h2>
+            <div class="riddle-topics">
+                <span class="hashtag">#recursive</span>
+                <span class="hashtag">#python</span>
+            </div>
+            <p class="riddle-description">
+                write a recursive function that returns the n-th element in a fibonnachi sequence. <br>
+                For example, in the following fibonnachi sequence: 0.1.1.2.3.5.8.13.21 and n=6,<br> the returned number will be 8.</p>
+            <a href="{% url "blog-page" %}" class="project-link">See Solution</a>
+            
+        </div>
+
+        <!-- riddle card 2 -->
+        <div class="riddle-card card-bg-2">
+            <h2 class="riddle-name">Cooking Competition</h2>
+            <div class="riddle-topics">
+                <span class="hashtag">#Python</span>
+                <span class="hashtag">#StructuredCoding</span>                                        
+            </div>
+            <p class="riddle-description">
+                In a cooking competition, K contestants prepare N dishes, each graded by J chefs on Taste, Appeal, and Execution (scores 1-10).
+                <br>Example: Chef Lemon rated Erik's dishes: (6,7,7), (9,4,6), (3,5,8).<br>
+                1.Write a function for chefs to grade all dishes.<br>
+                2.Write a function to return the top K/2 contestants advancing to the next round, based on average scores.
+             </p>
+            <a href="{% url "blog-page" %}" class="project-link">See Solution</a>
+            
+        </div>
+         <!-- riddle card 3 -->
+        <div class="riddle-card card-bg-2">
+            <h2 class="riddle-name">Call Center</h2>
+            <div class="riddle-topics">
+                <span class="hashtag">#SQL</span>
+            </div>
+            <p class="riddle-description">  
+                In a call center, employees both make and receive phone calls. Each employee can either place a call to a client (acting as a caller) or receive a call (acting as a callee). There are two tables: income_calls and outgoing_calls.
+                Your task is to write a query that retrieves the names of all employees who have a total call duration exceeding 100 minutes, whether they participated as a caller or a callee.
+            </p>
+            <a href="{% url "blog-page" %}" class="project-link">See Solution</a>
+            
+        </div>
+        
+        <!-- riddle card 4 -->
+        <div class="riddle-card card-bg-1">
+            <h2 class="riddle-name">Ranking Products from Sales Table</h2>
+            <div class="riddle-topics">
+                <span class="hashtag">#SQL</span>
+            </div>
+            <p class="riddle-description">You have a table with the following fields:<br>
+            transactionId,productId,saleDate,saleAmount<br>
+            Write a query to retrieve for each product:<br>
+            productId,totalSales,salesRank,previousMonthSales<br>
+            The results should be ordered by the sales rank in descending order.<br>
+            Include only products that have records in the current month, the month before the current one, and have had at least 3 consecutive months of sales at any time.
+            </p>
+            <a href="{% url "blog-page" %}" class="project-link">See Solution</a>
+            
+        </div>
+
+        <!-- Additional riddle cards can be added here -->
+    </section>
+</div>
+
+{% endblock %}
